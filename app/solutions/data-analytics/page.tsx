@@ -30,7 +30,7 @@ export default function DataAnalyticsPage() {
               Modern lakehouses, governed pipelines, served at the latency your business needs — with the DQ score to back every number.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Scope an engagement →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -51,7 +51,7 @@ export default function DataAnalyticsPage() {
               </div>
               <div className="flex gap-[3px]">
                 {["OVERVIEW", "PIPELINES", "QUALITY"].map((tab, i) => (
-                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent" }}>
+                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent" }}>
                     {tab}
                   </span>
                 ))}
@@ -78,8 +78,8 @@ export default function DataAnalyticsPage() {
                 <svg viewBox="0 0 280 72" preserveAspectRatio="none" style={{ width: "100%", height: "72px" }}>
                   <defs>
                     <linearGradient id="dg" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#67e8f9" stopOpacity=".85" />
-                      <stop offset="100%" stopColor="#818cf8" stopOpacity=".3" />
+                      <stop offset="0%" stopColor="#ddd6fe" stopOpacity=".85" />
+                      <stop offset="100%" stopColor="#f97316" stopOpacity=".3" />
                     </linearGradient>
                   </defs>
                   <line stroke="rgba(255,255,255,.06)" strokeWidth=".5" x1="0" y1="36" x2="280" y2="36" />
@@ -149,7 +149,7 @@ export default function DataAnalyticsPage() {
             { target: 140, suffix: "+", label: "Lakehouses delivered" },
           ].map((stat) => (
             <Reveal key={stat.label}>
-              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#c7d2fe,#67e8f9)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#fed7aa,#ddd6fe)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
                 <CountUp target={stat.target} suffix={stat.suffix} />
               </div>
               <div className="font-mono text-[10px] tracking-[0.12em] uppercase mt-2" style={{ color: "var(--color-ink-3)" }}>{stat.label}</div>
@@ -161,14 +161,14 @@ export default function DataAnalyticsPage() {
       {/* CTA */}
       <section className="relative z-[1] text-center" id="cta" style={{ padding: "88px clamp(20px,4vw,48px)" }}>
         <Reveal className="max-w-[680px] mx-auto rounded-[14px] p-[56px_40px] relative overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.12)", background: "var(--color-bg-2)" }}>
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)" }} />
           <h2 className="relative font-semibold tracking-[-0.02em] mb-3.5" style={{ fontSize: "clamp(28px,3.5vw,42px)" }}>
             Ready to <em className="not-italic" style={{ color: "var(--color-violet)" }}>start</em>?
           </h2>
           <p className="relative text-[15px] max-w-[420px] mx-auto mb-6.5 leading-[1.65]" style={{ color: "var(--color-ink-2)" }}>
             Let&apos;s discuss how this fits your roadmap. We respond within one business day.
           </p>
-          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
             Start Your Journey →
           </Link>
         </Reveal>

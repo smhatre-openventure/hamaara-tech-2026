@@ -21,7 +21,7 @@ function MethodMockup() {
         </div>
         <div className="flex gap-[3px]">
           {["COMPARE", "CASES", "METRICS"].map((tab, i) => (
-            <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent" }}>
+            <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent" }}>
               {tab}
             </span>
           ))}
@@ -38,7 +38,7 @@ function MethodMockup() {
               <span>○ Outcome · unknown</span>
             </div>
           </div>
-          <div className="rounded-[6px] p-[11px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(45,212,191,0.04)" }}>
+          <div className="rounded-[6px] p-[11px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(167,139,250,0.04)" }}>
             <div className="text-[9px] tracking-[0.12em] uppercase mb-[7px]" style={{ color: "var(--color-teal)" }}>HAMAARA</div>
             <div className="flex flex-col gap-[5px]" style={{ color: "var(--color-teal)" }}>
               <span>● Co-build · day 1</span>
@@ -57,12 +57,12 @@ function MethodMockup() {
               <animate attributeName="width" from="0" to="160" dur="1.4s" fill="freeze" />
             </rect>
             <text x="242" y="13" fill="#475569" fontSize="9" fontFamily="JetBrains Mono">~9mo</text>
-            <text x="0" y="38" fill="#2dd4bf" fontSize="9" fontFamily="JetBrains Mono">HAMAARA</text>
-            <rect x="76" y="30" width="196" height="9" rx="2" fill="rgba(45,212,191,.1)" />
-            <rect x="76" y="30" width="58" height="9" rx="2" fill="#2dd4bf">
+            <text x="0" y="38" fill="#a78bfa" fontSize="9" fontFamily="JetBrains Mono">HAMAARA</text>
+            <rect x="76" y="30" width="196" height="9" rx="2" fill="rgba(167,139,250,.1)" />
+            <rect x="76" y="30" width="58" height="9" rx="2" fill="#a78bfa">
               <animate attributeName="width" from="0" to="58" dur="1.2s" fill="freeze" />
             </rect>
-            <text x="140" y="38" fill="#2dd4bf" fontSize="9" fontFamily="JetBrains Mono">~10wk</text>
+            <text x="140" y="38" fill="#a78bfa" fontSize="9" fontFamily="JetBrains Mono">~10wk</text>
           </svg>
         </div>
       </div>
@@ -95,7 +95,7 @@ export default function WhyHamaaraPage() {
               Co-build with your engineering org — senior teams, production-first methods, no slide-decks.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Book a session →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -131,7 +131,7 @@ export default function WhyHamaaraPage() {
                 { num: "05", title: "Quarterly optionality", desc: "Ramp up, down, or take in-house at any quarterly boundary." },
               ].map((item) => (
                 <li key={item.num} className="grid gap-3 items-start" style={{ gridTemplateColumns: "26px 1fr" }}>
-                  <div className="w-[22px] h-[22px] rounded-[6px] grid place-items-center font-mono text-[10px] flex-shrink-0" style={{ background: "rgba(45,212,191,0.12)", border: "1px solid var(--color-line-t)", color: "var(--color-teal)" }}>
+                  <div className="w-[22px] h-[22px] rounded-[6px] grid place-items-center font-mono text-[10px] flex-shrink-0" style={{ background: "rgba(167,139,250,0.12)", border: "1px solid var(--color-line-t)", color: "var(--color-teal)" }}>
                     {item.num}
                   </div>
                   <div>
@@ -155,7 +155,7 @@ export default function WhyHamaaraPage() {
             { target: 15, suffix: "+", label: "Yrs combined exp." },
           ].map((stat) => (
             <Reveal key={stat.label}>
-              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#c7d2fe,#67e8f9)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#fed7aa,#ddd6fe)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
                 <CountUp target={stat.target} suffix={stat.suffix} />
               </div>
               <div className="font-mono text-[10px] tracking-[0.12em] uppercase mt-2" style={{ color: "var(--color-ink-3)" }}>{stat.label}</div>
@@ -167,14 +167,14 @@ export default function WhyHamaaraPage() {
       {/* CTA */}
       <section className="relative z-[1] text-center" id="cta" style={{ padding: "88px clamp(20px,4vw,48px)" }}>
         <Reveal className="max-w-[680px] mx-auto rounded-[14px] p-[56px_40px] relative overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.12)", background: "var(--color-bg-2)" }}>
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)" }} />
           <h2 className="relative font-semibold tracking-[-0.02em] mb-3.5" style={{ fontSize: "clamp(28px,3.5vw,42px)" }}>
             See the <em className="not-italic" style={{ color: "var(--color-violet)" }}>difference</em>.
           </h2>
           <p className="relative text-[15px] max-w-[420px] mx-auto mb-6.5 leading-[1.65]" style={{ color: "var(--color-ink-2)" }}>
             One working session. No pitch. A real conversation about what you&apos;re trying to build.
           </p>
-          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
             Start Your Journey →
           </Link>
         </Reveal>

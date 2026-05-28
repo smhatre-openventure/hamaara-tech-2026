@@ -35,7 +35,7 @@ export function Footer() {
           <Link
             href="/contact"
             className="mt-4.5 inline-flex items-center gap-1.5 px-[15px] py-[9px] rounded-full text-[13px] font-semibold no-underline transition-opacity duration-[180ms] hover:opacity-85"
-            style={{ background: "var(--color-teal)", color: "#0b0c0f" }}
+            style={{ background: "var(--color-cta)", color: "#ffffff" }}
           >
             Start a project →
           </Link>

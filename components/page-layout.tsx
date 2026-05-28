@@ -98,7 +98,7 @@ export function PageLayout({
               <Link
                 href={ctaPrimary.href}
                 className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px"
-                style={{ background: "var(--color-teal)", color: "#0b0c0f" }}
+                style={{ background: "var(--color-cta)", color: "#ffffff" }}
               >
                 {ctaPrimary.label} →
               </Link>
@@ -190,7 +190,7 @@ export function PageLayout({
                 <div
                   className="text-[40px] font-semibold leading-none tracking-[-0.03em] max-[680px]:text-[32px]"
                   style={{
-                    background: "linear-gradient(135deg,#c7d2fe,#67e8f9)",
+                    background: "linear-gradient(135deg,#fed7aa,#ddd6fe)",
                     WebkitBackgroundClip: "text",
                     backgroundClip: "text",
                     color: "transparent",
@@ -227,7 +227,7 @@ export function PageLayout({
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)",
+                "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)",
             }}
           />
           <h2
@@ -245,7 +245,7 @@ export function PageLayout({
           <Link
             href="/contact"
             className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px"
-            style={{ background: "var(--color-teal)", color: "#0b0c0f" }}
+            style={{ background: "var(--color-cta)", color: "#ffffff" }}
           >
             Start Your Journey →
           </Link>
@@ -274,14 +274,14 @@ export function StandardMockup({
     if (tag === "done" || tag === "synced" || tag === "live")
       return {
         color: "var(--color-teal)",
-        background: "rgba(45,212,191,0.1)",
-        border: "1px solid rgba(45,212,191,0.2)",
+        background: "rgba(167,139,250,0.1)",
+        border: "1px solid rgba(167,139,250,0.2)",
       };
     if (tag === "running")
       return {
         color: "var(--color-cyan)",
-        background: "rgba(103,232,249,0.08)",
-        border: "1px solid rgba(103,232,249,0.2)",
+        background: "rgba(221,214,254,0.08)",
+        border: "1px solid rgba(221,214,254,0.2)",
       };
     if (tag === "watching" || tag === "partial" || tag === "warn")
       return {
@@ -333,7 +333,7 @@ export function StandardMockup({
               style={{
                 color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)",
                 border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-                background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent",
+                background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent",
               }}
             >
               {tab}
@@ -348,7 +348,7 @@ export function StandardMockup({
             className="mkp-row flex justify-between items-center px-2.5 py-2 rounded-[6px]"
             style={{
               border: row.hi ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-              background: row.hi ? "rgba(45,212,191,0.05)" : "rgba(0,0,0,0.18)",
+              background: row.hi ? "rgba(167,139,250,0.05)" : "rgba(0,0,0,0.18)",
             }}
           >
             <span

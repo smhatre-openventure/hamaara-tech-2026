@@ -15,7 +15,7 @@ function PlatformMockup({ title, meta, stats, rows, foot }: {
   foot: [string, string];
 }) {
   const tagStyle = (type: string) => {
-    if (type === "ok") return { color: "var(--color-teal)", background: "rgba(45,212,191,0.1)", border: "1px solid rgba(45,212,191,0.2)" };
+    if (type === "ok") return { color: "var(--color-teal)", background: "rgba(167,139,250,0.1)", border: "1px solid rgba(167,139,250,0.2)" };
     return { color: "var(--color-amber)", background: "rgba(245,158,11,0.08)", border: "1px solid rgba(245,158,11,0.2)" };
   };
   return (
@@ -80,7 +80,7 @@ export default function SalesforcePage() {
               Sales Cloud, Service Cloud, CPQ — matched to how your revenue org actually operates.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Scope a project →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -147,14 +147,14 @@ export default function SalesforcePage() {
 
       <section className="relative z-[1] text-center" id="cta" style={{ padding: "88px clamp(20px,4vw,48px)" }}>
         <Reveal className="max-w-[680px] mx-auto rounded-[14px] p-[56px_40px] relative overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.12)", background: "var(--color-bg-2)" }}>
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)" }} />
           <h2 className="relative font-semibold tracking-[-0.02em] mb-3.5" style={{ fontSize: "clamp(28px,3.5vw,42px)" }}>
             Let&apos;s fix your <em className="not-italic" style={{ color: "var(--color-violet)" }}>revenue ops</em>.
           </h2>
           <p className="relative text-[15px] max-w-[420px] mx-auto mb-6.5 leading-[1.65]" style={{ color: "var(--color-ink-2)" }}>
             Tell us what the CRM isn&apos;t doing that it should.
           </p>
-          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
             Start Your Journey →
           </Link>
         </Reveal>

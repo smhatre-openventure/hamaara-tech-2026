@@ -62,12 +62,15 @@ const resourcesLinks = [
   { href: "/why-hamaara", label: "Why Hamaara", desc: "Our method" },
 ];
 
-const companyLinks = [
-  { href: "/why-hamaara", label: "Why Hamaara", desc: "Co-build, not throw-over." },
-  { href: "/contact", label: "Contact Us", desc: "Start a working session." },
+const techStackLinks = [
   { href: "/solutions/netsuite", label: "NetSuite", desc: "Finance, inventory, OTC." },
   { href: "/solutions/oracle-erp", label: "Oracle ERP", desc: "Fusion ERP, EPM, and HCM." },
   { href: "/solutions/salesforce", label: "Salesforce", desc: "Revenue ops, end-to-end." },
+];
+
+const companyLinks = [
+  { href: "/why-hamaara", label: "Why Hamaara", desc: "Co-build, not throw-over." },
+  { href: "/contact", label: "Contact Us", desc: "Start a working session." },
 ];
 
 interface DropdownItem {
@@ -151,6 +154,7 @@ export function Nav() {
           {[
             { label: "Solutions", links: solutionsLinks },
             { label: "For You", links: forYouLinks },
+            { label: "Tech Stack", links: techStackLinks },
             { label: "Resources", links: resourcesLinks },
             { label: "Company", links: companyLinks },
           ].map((group) => (
@@ -233,6 +237,7 @@ export function Nav() {
           {[
             { label: "Solutions", links: solutionsLinks },
             { label: "For You", links: forYouLinks },
+            { label: "Tech Stack", links: techStackLinks },
             { label: "Resources", links: resourcesLinks },
             { label: "Company", links: companyLinks },
           ].map((group) => (
