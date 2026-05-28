@@ -38,7 +38,7 @@ export default function ContactPage() {
               Tell us what you&apos;re trying to build. We respond within one business day with a scoped working session.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="#contact-form" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="#contact-form" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Send a message →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -59,7 +59,7 @@ export default function ContactPage() {
               </div>
               <div className="flex gap-[3px]">
                 {["SCHEDULE", "AGENDA"].map((tab, i) => (
-                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent" }}>
+                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent" }}>
                     {tab}
                   </span>
                 ))}
@@ -72,17 +72,17 @@ export default function ContactPage() {
               <div className="grid grid-cols-7 gap-[3px] mb-2.5">
                 {[
                   {n:1, style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
-                  {n:2, style:{border:"1px solid var(--color-line-t)",background:"rgba(45,212,191,0.06)",color:"var(--color-teal)"}},
-                  {n:3, style:{border:"1px solid var(--color-line-t)",background:"rgba(45,212,191,0.06)",color:"var(--color-teal)"}},
+                  {n:2, style:{border:"1px solid var(--color-line-t)",background:"rgba(167,139,250,0.06)",color:"var(--color-teal)"}},
+                  {n:3, style:{border:"1px solid var(--color-line-t)",background:"rgba(167,139,250,0.06)",color:"var(--color-teal)"}},
                   {n:4, style:{border:"2px solid var(--color-teal)",background:"var(--color-teal)",color:"#0b0c0f",fontWeight:"600"}},
                   {n:5, style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                   {n:6, style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                   {n:7, style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
-                  {n:8, style:{border:"1px solid var(--color-line-t)",background:"rgba(45,212,191,0.06)",color:"var(--color-teal)"}},
+                  {n:8, style:{border:"1px solid var(--color-line-t)",background:"rgba(167,139,250,0.06)",color:"var(--color-teal)"}},
                   {n:9, style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                   {n:10,style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                   {n:11,style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
-                  {n:12,style:{border:"1px solid var(--color-line-t)",background:"rgba(45,212,191,0.06)",color:"var(--color-teal)"}},
+                  {n:12,style:{border:"1px solid var(--color-line-t)",background:"rgba(167,139,250,0.06)",color:"var(--color-teal)"}},
                   {n:13,style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                   {n:14,style:{border:"1px solid var(--color-line)",background:"rgba(0,0,0,0.15)",color:"var(--color-ink-3)"}},
                 ].map((day) => (
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   </div>
                 ))}
               </div>
-              <div className="rounded-[6px] p-[9px_11px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(45,212,191,0.04)" }}>
+              <div className="rounded-[6px] p-[9px_11px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(167,139,250,0.04)" }}>
                 <div className="font-mono text-[9px] tracking-[0.1em] uppercase mb-1" style={{ color: "var(--color-teal)" }}>● JUN 4 · 14:00 IST · SELECTED</div>
                 <div className="text-[10.5px]" style={{ color: "var(--color-ink-2)" }}>60 min working session. No deck, no pitch.</div>
               </div>
@@ -187,7 +187,7 @@ export default function ContactPage() {
                   <button
                     type="button"
                     className="w-full flex justify-center items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium transition-all duration-[180ms] hover:-translate-y-px cursor-pointer border-none"
-                    style={{ background: sent ? "#14b8a6" : "var(--color-teal)", color: "#0b0c0f" }}
+                    style={{ background: sent ? "#b91c1c" : "var(--color-cta)", color: "#ffffff" }}
                     onClick={() => setSent(true)}
                   >
                     {sent ? "Message sent ✓" : "Send Message →"}

@@ -29,7 +29,7 @@ export default function StartupFoundersPage() {
               Zero to production in weeks. Senior engineering, AI-native architecture, decisions you can defend at board level.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Scope an MVP →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -50,7 +50,7 @@ export default function StartupFoundersPage() {
               </div>
               <div className="flex gap-[3px]">
                 {["TIMELINE", "VELOCITY", "BURN"].map((tab, i) => (
-                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent" }}>
+                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent" }}>
                     {tab}
                   </span>
                 ))}
@@ -72,7 +72,7 @@ export default function StartupFoundersPage() {
                   </div>
                 ))}
               </div>
-              <div className="rounded-[6px] p-[12px_14px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(45,212,191,0.04)" }}>
+              <div className="rounded-[6px] p-[12px_14px]" style={{ border: "1px solid var(--color-line-t)", background: "rgba(167,139,250,0.04)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="w-[6px] h-[6px] rounded-full animate-blink" style={{ background: "var(--color-teal)" }} />
                   <span className="text-[10px] tracking-[0.12em] uppercase font-semibold" style={{ color: "var(--color-teal)" }}>WEEK 6 · ALPHA SHIPPED</span>
@@ -135,7 +135,7 @@ export default function StartupFoundersPage() {
             { target: 6, suffix: " hrs", label: "Weekly founder sync" },
           ].map((stat) => (
             <Reveal key={stat.label}>
-              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#c7d2fe,#67e8f9)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
+              <div className="text-[40px] font-semibold leading-none tracking-[-0.03em]" style={{ background: "linear-gradient(135deg,#fed7aa,#ddd6fe)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>
                 <CountUp target={stat.target} suffix={stat.suffix} />
               </div>
               <div className="font-mono text-[10px] tracking-[0.12em] uppercase mt-2" style={{ color: "var(--color-ink-3)" }}>{stat.label}</div>
@@ -146,14 +146,14 @@ export default function StartupFoundersPage() {
 
       <section className="relative z-[1] text-center" id="cta" style={{ padding: "88px clamp(20px,4vw,48px)" }}>
         <Reveal className="max-w-[680px] mx-auto rounded-[14px] p-[56px_40px] relative overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.12)", background: "var(--color-bg-2)" }}>
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)" }} />
           <h2 className="relative font-semibold tracking-[-0.02em] mb-3.5" style={{ fontSize: "clamp(28px,3.5vw,42px)" }}>
             Let&apos;s build your <em className="not-italic" style={{ color: "var(--color-violet)" }}>MVP</em>.
           </h2>
           <p className="relative text-[15px] max-w-[420px] mx-auto mb-6.5 leading-[1.65]" style={{ color: "var(--color-ink-2)" }}>
             Tell us what you&apos;re building. We&apos;ll tell you how fast we can ship it.
           </p>
-          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
             Start Your Journey →
           </Link>
         </Reveal>

@@ -32,7 +32,7 @@ export default function HomePage() {
               style={{
                 color: "var(--color-cyan)",
                 border: "1px solid var(--color-line-t)",
-                background: "rgba(45,212,191,0.04)",
+                background: "rgba(167,139,250,0.04)",
               }}
             >
               <span
@@ -52,7 +52,7 @@ export default function HomePage() {
               <em
                 className="not-italic"
                 style={{
-                  background: "linear-gradient(110deg,#c7d2fe,#67e8f9)",
+                  background: "linear-gradient(110deg,#fed7aa,#ddd6fe)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
@@ -70,7 +70,7 @@ export default function HomePage() {
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px"
-                style={{ background: "var(--color-teal)", color: "#0b0c0f" }}
+                style={{ background: "var(--color-cta)", color: "#ffffff" }}
               >
                 Get Started <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
               </Link>
@@ -124,7 +124,7 @@ export default function HomePage() {
                     style={{
                       color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)",
                       border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-                      background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent",
+                      background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent",
                     }}
                   >
                     {tab}
@@ -143,7 +143,7 @@ export default function HomePage() {
                   className="mkp-row flex justify-between items-center px-2.5 py-2 rounded-[6px]"
                   style={{
                     border: row.hi ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-                    background: row.hi ? "rgba(45,212,191,0.05)" : "rgba(0,0,0,0.18)",
+                    background: row.hi ? "rgba(167,139,250,0.05)" : "rgba(0,0,0,0.18)",
                   }}
                 >
                   <span
@@ -162,13 +162,13 @@ export default function HomePage() {
                       row.tag === "done"
                         ? {
                             color: "var(--color-teal)",
-                            background: "rgba(45,212,191,0.1)",
-                            border: "1px solid rgba(45,212,191,0.2)",
+                            background: "rgba(167,139,250,0.1)",
+                            border: "1px solid rgba(167,139,250,0.2)",
                           }
                         : {
                             color: "var(--color-cyan)",
-                            background: "rgba(103,232,249,0.08)",
-                            border: "1px solid rgba(103,232,249,0.2)",
+                            background: "rgba(221,214,254,0.08)",
+                            border: "1px solid rgba(221,214,254,0.2)",
                           }
                     }
                   >
@@ -242,7 +242,7 @@ export default function HomePage() {
               <div
                 className="text-[40px] font-semibold leading-none tracking-[-0.03em] max-[680px]:text-[32px]"
                 style={{
-                  background: "linear-gradient(135deg,#c7d2fe,#67e8f9)",
+                  background: "linear-gradient(135deg,#fed7aa,#ddd6fe)",
                   WebkitBackgroundClip: "text",
                   backgroundClip: "text",
                   color: "transparent",
@@ -329,10 +329,10 @@ export default function HomePage() {
                       <div style={{ display: "flex", gap: "5px", marginBottom: "8px" }}>
                         <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#ef4444" }} />
                         <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#f59e0b" }} />
-                        <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#2dd4bf" }} />
+                        <span style={{ width: "7px", height: "7px", borderRadius: "50%", background: "#a78bfa" }} />
                       </div>
                       <div style={{ color: "var(--color-ink-3)", marginBottom: "3px" }}>// hamaara/api/route.ts</div>
-                      <div><span style={{ color: "#c7d2fe" }}>export async</span> <span style={{ color: "#67e8f9" }}>function</span> POST(req) {"{"}</div>
+                      <div><span style={{ color: "#fed7aa" }}>export async</span> <span style={{ color: "#ddd6fe" }}>function</span> POST(req) {"{"}</div>
                       <div style={{ paddingLeft: "12px", color: "var(--color-ink-2)" }}>const data = await parse(req)</div>
                       <div style={{ paddingLeft: "12px", color: "var(--color-ink-2)" }}>return json({"{ ok: true }"})</div>
                       <div>{"}"}</div>
@@ -384,8 +384,8 @@ export default function HomePage() {
                     <svg viewBox="0 0 280 120" preserveAspectRatio="none" style={{ width: "100%", height: "100%" }}>
                       <defs>
                         <linearGradient id="vcg" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="0%" stopColor="#67e8f9" stopOpacity=".85" />
-                          <stop offset="100%" stopColor="#818cf8" stopOpacity=".3" />
+                          <stop offset="0%" stopColor="#ddd6fe" stopOpacity=".85" />
+                          <stop offset="100%" stopColor="#f97316" stopOpacity=".3" />
                         </linearGradient>
                       </defs>
                       <line stroke="rgba(255,255,255,.06)" strokeWidth=".5" x1="0" y1="40" x2="280" y2="40" />
@@ -444,7 +444,7 @@ export default function HomePage() {
                   </span>
                   <div style={{ position: "absolute", inset: 0, padding: "40px 14px 12px", fontFamily: "var(--font-mono)", fontSize: "10px", display: "flex", flexDirection: "column", gap: "7px" }}>
                     {[
-                      { label: "INGEST · 412 GB/HR", dots: "●●●●●●●●○○", color: "var(--color-teal)", border: "var(--color-line-t)", bg: "rgba(45,212,191,0.06)" },
+                      { label: "INGEST · 412 GB/HR", dots: "●●●●●●●●○○", color: "var(--color-teal)", border: "var(--color-line-t)", bg: "rgba(167,139,250,0.06)" },
                       { label: "TRANSFORM · DBT", dots: "●●●●●●●●●○", color: "var(--color-ink-2)", border: "var(--color-line)", bg: "rgba(0,0,0,0.2)" },
                       { label: "GOVERN · UNITY", dots: "●●●●●●○○○○", color: "var(--color-amber)", border: "rgba(245,158,11,0.25)", bg: "rgba(245,158,11,0.05)" },
                       { label: "SERVE · BIGQUERY", dots: "●●●●●●●●○○", color: "var(--color-ink-2)", border: "var(--color-line)", bg: "rgba(0,0,0,0.2)" },
@@ -549,186 +549,212 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="text-[15.5px] leading-[1.65] max-w-[460px]" style={{ color: "var(--color-ink-2)" }}>
-              Every engagement follows the same structure — from foundational data to the experience
-              users meet.
+              Six interlocking layers — from cloud infrastructure to the interfaces your teams use
+              every day. Every engagement is built on the same proven structure.
             </p>
           </div>
 
-          <div
-            className="rounded-[10px] p-6.5 mt-7 overflow-hidden relative"
-            style={{
-              border: "1px solid rgba(255,255,255,0.12)",
-              background: "var(--color-bg-2)",
-            }}
-          >
-            <div className="flex justify-between items-center mb-5 flex-wrap gap-2">
-              <span
-                className="font-mono text-[10px] tracking-[0.12em] uppercase px-2.5 py-1 rounded-full"
+          {/* Stack layers */}
+          <div className="rounded-[12px] overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.1)" }}>
+            {[
+              {
+                num: "4",
+                label: "Experience",
+                desc: "The interfaces your teams and customers interact with — co-pilots, dashboards, portals, and conversational AI built for real workflows.",
+                chips: ["Web & Mobile Apps", "AI Co-pilots", "Chat Interfaces", "Executive Dashboards"],
+                accent: "var(--color-teal)",
+                accentBg: "rgba(167,139,250,0.08)",
+                accentBorder: "rgba(167,139,250,0.2)",
+                numBg: "rgba(167,139,250,0.15)",
+                numColor: "var(--color-teal)",
+              },
+              {
+                num: "3",
+                label: "Intelligence",
+                desc: "The AI brain — large language models, RAG pipelines, multi-agent orchestration, and custom prompt engineering tuned to your domain.",
+                chips: ["LLMs & Fine-tuning", "RAG Pipelines", "Multi-agent Systems", "Prompt Engineering"],
+                accent: "var(--color-violet)",
+                accentBg: "rgba(249,115,22,0.07)",
+                accentBorder: "rgba(249,115,22,0.18)",
+                numBg: "rgba(249,115,22,0.15)",
+                numColor: "var(--color-violet)",
+              },
+              {
+                num: "2",
+                label: "Integration & Knowledge",
+                desc: "Enterprise connectors, semantic search, and real-time data pipelines that give your AI accurate, up-to-date context from every system of record.",
+                chips: ["Oracle ERP", "Salesforce", "REST & GraphQL APIs", "Vector Search"],
+                accent: "var(--color-cyan)",
+                accentBg: "rgba(221,214,254,0.06)",
+                accentBorder: "rgba(221,214,254,0.15)",
+                numBg: "rgba(221,214,254,0.12)",
+                numColor: "var(--color-cyan)",
+              },
+              {
+                num: "1",
+                label: "Foundational",
+                desc: "Secure, scalable cloud infrastructure — data lakes, identity management, and the platform backbone that everything else runs on.",
+                chips: ["Azure / AWS / GCP", "Data Lakes & Warehouses", "Identity & IAM", "Networking & Security"],
+                accent: "#f97316",
+                accentBg: "rgba(245,158,11,0.06)",
+                accentBorder: "rgba(245,158,11,0.15)",
+                numBg: "rgba(245,158,11,0.12)",
+                numColor: "#f97316",
+              },
+            ].map((layer, idx, arr) => (
+              <div
+                key={layer.num}
+                className="grid gap-6 items-center p-6 max-[680px]:grid-cols-1"
                 style={{
-                  color: "var(--color-teal)",
-                  border: "1px solid var(--color-line-t)",
+                  gridTemplateColumns: "44px 1fr auto",
+                  background: layer.accentBg,
+                  borderBottom: idx < arr.length - 1 ? "1px solid rgba(255,255,255,0.07)" : "none",
                 }}
               >
-                ● HAMAARA STACK · V3 · LAYER VIEW
-              </span>
-              <span
-                className="font-mono text-[10px] tracking-[0.1em] uppercase"
-                style={{ color: "var(--color-ink-3)" }}
-              >
-                SHARED IN WORKING SESSIONS
-              </span>
-            </div>
-
-            <div
-              className="grid gap-3 max-[680px]:grid-cols-1"
-              style={{ gridTemplateColumns: "1fr 2fr 1fr" }}
-            >
-              {/* Operations column */}
-              <div
-                className="rounded-lg p-3.5"
-                style={{ border: "1px solid var(--color-line)", background: "rgba(0,0,0,0.18)" }}
-              >
-                <div className="flex items-center gap-2.5 mb-3">
-                  <div
-                    className="w-[22px] h-[22px] rounded-full grid place-items-center font-mono text-[10px]"
-                    style={{
-                      background: "rgba(129,140,248,0.15)",
-                      color: "var(--color-violet)",
-                      border: "1px solid rgba(129,140,248,0.3)",
-                    }}
-                  >
-                    5
-                  </div>
-                  <span className="text-[13px] font-semibold">Operations</span>
+                {/* Layer badge */}
+                <div
+                  className="w-[44px] h-[44px] rounded-[10px] grid place-items-center font-mono text-[13px] font-semibold flex-shrink-0"
+                  style={{
+                    background: layer.numBg,
+                    color: layer.numColor,
+                    border: `1px solid ${layer.accentBorder}`,
+                  }}
+                >
+                  L{layer.num}
                 </div>
-                <ul className="list-none flex flex-col gap-1.5">
-                  {["CI/CD Pipelines", "Agent Management", "Observability", "Feedback & Retraining"].map(
-                    (item) => (
-                      <li
-                        key={item}
-                        className="text-[12px] pl-3 relative"
-                        style={{ color: "var(--color-ink-2)" }}
-                      >
-                        <span
-                          className="absolute left-0 top-[7px] w-1 h-1 rounded-full"
-                          style={{ background: "var(--color-teal)" }}
-                        />
-                        {item}
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
 
-              {/* Middle layers */}
-              <div className="flex flex-col gap-2">
-                {[
-                  { num: "4", label: "Experience", desc: "Where users meet AI.", active: false },
-                  { num: "3", label: "Intelligence", desc: "Models, prompts, orchestration.", active: false },
-                  { num: "2", label: "Integration & Knowledge", desc: "Data, APIs and retrieval.", active: true },
-                  { num: "1", label: "Foundational", desc: "Data, infra and identity.", active: false },
-                ].map((row) => (
-                  <div
-                    key={row.num}
-                    className="rounded-[7px] p-[10px_13px] grid items-center gap-3"
-                    style={{
-                      gridTemplateColumns: "24px 1fr auto",
-                      border: row.active ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-                      background: row.active ? "rgba(45,212,191,0.04)" : "rgba(0,0,0,0.18)",
-                    }}
-                  >
-                    <div
-                      className="w-5 h-5 rounded-full grid place-items-center font-mono text-[10px]"
-                      style={
-                        row.active
-                          ? { background: "var(--color-teal)", color: "#0b0c0f", border: "none" }
-                          : {
-                              border: "1px solid rgba(255,255,255,0.12)",
-                              color: "var(--color-ink-3)",
-                            }
-                      }
+                {/* Label + description */}
+                <div>
+                  <div className="text-[16px] font-semibold mb-1" style={{ color: "var(--color-ink)" }}>
+                    {layer.label}
+                  </div>
+                  <p className="text-[13.5px] leading-[1.6]" style={{ color: "var(--color-ink-2)" }}>
+                    {layer.desc}
+                  </p>
+                </div>
+
+                {/* Capability chips */}
+                <div className="flex flex-wrap gap-[7px] max-w-[260px] max-[680px]:max-w-none justify-end max-[680px]:justify-start">
+                  {layer.chips.map((chip) => (
+                    <span
+                      key={chip}
+                      className="font-mono text-[10px] tracking-[0.08em] px-2.5 py-[5px] rounded-full whitespace-nowrap"
+                      style={{
+                        color: layer.numColor,
+                        border: `1px solid ${layer.accentBorder}`,
+                        background: layer.numBg,
+                      }}
                     >
-                      {row.num}
+                      {chip}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            {/* Cross-cutting: Operations + Governance */}
+            <div
+              className="grid gap-0 max-[680px]:grid-cols-1"
+              style={{
+                gridTemplateColumns: "1fr 1fr",
+                borderTop: "1px solid rgba(255,255,255,0.1)",
+                background: "rgba(0,0,0,0.2)",
+              }}
+            >
+              {[
+                {
+                  num: "5",
+                  label: "Operations",
+                  desc: "Keeps every layer healthy and improving over time.",
+                  chips: ["CI/CD Pipelines", "Observability", "Agent Management", "Feedback & Retraining"],
+                  numColor: "var(--color-amber)",
+                  numBg: "rgba(245,158,11,0.12)",
+                  accentBorder: "rgba(245,158,11,0.2)",
+                  badge: "CROSS-CUTTING",
+                },
+                {
+                  num: "6",
+                  label: "Governance",
+                  desc: "Policy, compliance, and cost controls across all layers.",
+                  chips: ["Access & Identity", "Policy Enforcement", "Cost & TokenOps", "Model Catalog"],
+                  numColor: "var(--color-teal)",
+                  numBg: "rgba(167,139,250,0.12)",
+                  accentBorder: "rgba(167,139,250,0.2)",
+                  badge: "CROSS-CUTTING",
+                },
+              ].map((layer, idx) => (
+                <div
+                  key={layer.num}
+                  className="p-5"
+                  style={{
+                    borderRight: idx === 0 ? "1px solid rgba(255,255,255,0.07)" : "none",
+                  }}
+                >
+                  <div className="flex items-center gap-2.5 mb-2">
+                    <div
+                      className="w-[30px] h-[30px] rounded-[7px] grid place-items-center font-mono text-[11px] font-semibold flex-shrink-0"
+                      style={{
+                        background: layer.numBg,
+                        color: layer.numColor,
+                        border: `1px solid ${layer.accentBorder}`,
+                      }}
+                    >
+                      L{layer.num}
                     </div>
                     <div>
-                      <div className="text-[13px] font-medium">{row.label}</div>
-                      <div className="text-[11.5px] mt-px" style={{ color: "var(--color-ink-3)" }}>
-                        {row.desc}
-                      </div>
-                    </div>
-                    <div className="flex gap-[3px]">
-                      {[0, 1, 2].map((i) => (
-                        <span
-                          key={i}
-                          className="w-4 h-[11px] rounded-[2px]"
-                          style={{
-                            border: "1px solid var(--color-line)",
-                            background: "rgba(255,255,255,0.02)",
-                          }}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Governance column */}
-              <div
-                className="rounded-lg p-3.5"
-                style={{ border: "1px solid var(--color-line)", background: "rgba(0,0,0,0.18)" }}
-              >
-                <div className="flex items-center gap-2.5 mb-3">
-                  <div
-                    className="w-[22px] h-[22px] rounded-full grid place-items-center font-mono text-[10px]"
-                    style={{
-                      background: "rgba(45,212,191,0.15)",
-                      color: "var(--color-teal)",
-                      border: "1px solid var(--color-line-t)",
-                    }}
-                  >
-                    6
-                  </div>
-                  <span className="text-[13px] font-semibold">Governance</span>
-                </div>
-                <ul className="list-none flex flex-col gap-1.5">
-                  {["Access & Identity", "Policy Enforcement", "Cost & TokenOps", "Model Catalog"].map(
-                    (item) => (
-                      <li
-                        key={item}
-                        className="text-[12px] pl-3 relative"
-                        style={{ color: "var(--color-ink-2)" }}
+                      <span className="text-[14px] font-semibold" style={{ color: "var(--color-ink)" }}>
+                        {layer.label}
+                      </span>
+                      <span
+                        className="ml-2 font-mono text-[9px] tracking-[0.1em] uppercase px-[7px] py-[2px] rounded-full"
+                        style={{
+                          color: layer.numColor,
+                          background: layer.numBg,
+                          border: `1px solid ${layer.accentBorder}`,
+                        }}
                       >
-                        <span
-                          className="absolute left-0 top-[7px] w-1 h-1 rounded-full"
-                          style={{ background: "var(--color-teal)" }}
-                        />
-                        {item}
-                      </li>
-                    )
-                  )}
-                </ul>
-              </div>
+                        {layer.badge}
+                      </span>
+                    </div>
+                  </div>
+                  <p className="text-[12.5px] leading-[1.55] mb-3" style={{ color: "var(--color-ink-2)" }}>
+                    {layer.desc}
+                  </p>
+                  <div className="flex flex-wrap gap-[6px]">
+                    {layer.chips.map((chip) => (
+                      <span
+                        key={chip}
+                        className="font-mono text-[10px] tracking-[0.07em] px-2 py-[4px] rounded-full"
+                        style={{
+                          color: "var(--color-ink-3)",
+                          border: "1px solid var(--color-line)",
+                          background: "rgba(255,255,255,0.03)",
+                        }}
+                      >
+                        {chip}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="mt-4.5 flex justify-between items-center flex-wrap gap-3.5">
-              <p className="text-[12px] leading-[1.5] max-w-[520px]" style={{ color: "var(--color-ink-3)" }}>
-                <strong style={{ color: "var(--color-ink-2)", fontWeight: 500 }}>
-                  Strategic alignment, ROI modeling, and use-case intake
-                </strong>{" "}
-                are treated as external inputs. The full layer-by-layer breakdown is shared in
-                working sessions.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-4 py-[9px] rounded-lg text-[13px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5"
-                style={{
-                  border: "1px solid rgba(255,255,255,0.12)",
-                  color: "var(--color-ink)",
-                }}
-              >
-                Request stack brief →
-              </Link>
-            </div>
+          <div className="mt-6 flex justify-between items-center flex-wrap gap-4">
+            <p className="text-[13px] leading-[1.55] max-w-[540px]" style={{ color: "var(--color-ink-3)" }}>
+              Every engagement starts with a tailored layer assessment — we identify where to invest,
+              what to modernize, and how to sequence delivery for maximum ROI.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-4 py-[9px] rounded-lg text-[13px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5"
+              style={{
+                border: "1px solid rgba(255,255,255,0.12)",
+                color: "var(--color-ink)",
+              }}
+            >
+              Request a stack brief →
+            </Link>
           </div>
         </div>
       </section>
@@ -749,7 +775,7 @@ export default function HomePage() {
             className="absolute inset-0 pointer-events-none"
             style={{
               background:
-                "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)",
+                "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)",
             }}
           />
           <h2
@@ -770,7 +796,7 @@ export default function HomePage() {
           <Link
             href="/contact"
             className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px"
-            style={{ background: "var(--color-teal)", color: "#0b0c0f" }}
+            style={{ background: "var(--color-cta)", color: "#ffffff" }}
           >
             Start Your Journey →
           </Link>

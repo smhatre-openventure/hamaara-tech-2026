@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-teal: #2dd4bf;
-  --color-teal-2: #14b8a6;
-  --color-cyan: #67e8f9;
-  --color-violet: #818cf8;
+  --color-teal: #a78bfa;
+  --color-teal-2: #8b5cf6;
+  --color-cyan: #ddd6fe;
+  --color-violet: #f97316;
   --color-amber: #f59e0b;
   --color-red: #E9222D;
   --color-orange: #F08230;
@@ -20,10 +20,14 @@
   --color-bg-card: #13151b;
   --color-line: rgba(255, 255, 255, 0.06);
   --color-line-2: rgba(255, 255, 255, 0.12);
-  --color-line-t: rgba(45, 212, 191, 0.2);
+  --color-line-t: rgba(167, 139, 250, 0.2);
 
   --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --color-cta: #E9222D;
 }
 
 @layer base {
@@ -54,8 +58,8 @@
     z-index: 0;
     pointer-events: none;
     background:
-      radial-gradient(ellipse 900px 500px at 10% -5%, rgba(129, 140, 248, 0.07) 0%, transparent 70%),
-      radial-gradient(ellipse 700px 500px at 95% 60%, rgba(45, 212, 191, 0.05) 0%, transparent 65%);
+      radial-gradient(ellipse 900px 500px at 10% -5%, rgba(249, 115, 22, 0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 700px 500px at 95% 60%, rgba(167, 139, 250, 0.05) 0%, transparent 65%);
   }
 }
 
@@ -124,17 +128,17 @@
 
 .vc-line {
   fill: none;
-  stroke: #67e8f9;
+  stroke: #ddd6fe;
   stroke-width: 1.5;
   stroke-dasharray: 280;
   stroke-dashoffset: 280;
   animation: drawLine 1.2s 0.5s ease forwards;
-  filter: drop-shadow(0 0 4px rgba(103, 232, 249, 0.5));
+  filter: drop-shadow(0 0 4px rgba(221, 214, 254, 0.5));
 }
 
 .nav-cta-pill:hover {
   border-color: var(--color-teal) !important;
-  background: rgba(45, 212, 191, 0.06) !important;
+  background: rgba(167, 139, 250, 0.06) !important;
 }
 
 /* ── Hero gradient blobs ───────────────────────────────────── */
@@ -166,7 +170,7 @@
 .hero-blob-1 {
   width: 680px;
   height: 680px;
-  background: radial-gradient(circle, rgba(129, 140, 248, 0.38) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.32) 0%, transparent 65%);
   top: -220px;
   left: -100px;
   animation: blob-drift-1 15s ease-in-out infinite;
@@ -175,7 +179,7 @@
 .hero-blob-2 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(45, 212, 191, 0.28) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.25) 0%, transparent 65%);
   top: -160px;
   right: -80px;
   animation: blob-drift-2 20s ease-in-out infinite;
@@ -184,7 +188,7 @@
 .hero-blob-3 {
   width: 480px;
   height: 480px;
-  background: radial-gradient(circle, rgba(103, 232, 249, 0.20) 0%, transparent 65%);
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.14) 0%, transparent 65%);
   bottom: -60px;
   left: 40%;
   transform: translateX(-50%);

@@ -28,7 +28,7 @@ export default function OperationsFinancePage() {
               Close faster, forecast with confidence, automate the work that shouldn&apos;t exist.
             </p>
             <div className="flex gap-3 flex-wrap">
-              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
                 Book a session →
               </Link>
               <Link href="#detail" className="inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px hover:bg-white/5" style={{ border: "1px solid rgba(255,255,255,0.12)", color: "var(--color-ink)" }}>
@@ -49,7 +49,7 @@ export default function OperationsFinancePage() {
               </div>
               <div className="flex gap-[3px]">
                 {["CHECKLIST", "VARIANCES", "SIGN-OFF"].map((tab, i) => (
-                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(45,212,191,0.06)" : "transparent" }}>
+                  <span key={tab} className="px-[9px] py-[3px] text-[9px] tracking-[0.1em] uppercase rounded-[4px]" style={{ color: i === 0 ? "var(--color-teal)" : "var(--color-ink-3)", border: i === 0 ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)", background: i === 0 ? "rgba(167,139,250,0.06)" : "transparent" }}>
                     {tab}
                   </span>
                 ))}
@@ -80,9 +80,9 @@ export default function OperationsFinancePage() {
                 ].map((row, i) => {
                   const tagColor =
                     row.tagType === "ok"
-                      ? { color: "var(--color-teal)", background: "rgba(45,212,191,0.1)", border: "1px solid rgba(45,212,191,0.2)" }
+                      ? { color: "var(--color-teal)", background: "rgba(167,139,250,0.1)", border: "1px solid rgba(167,139,250,0.2)" }
                       : row.tagType === "run"
-                        ? { color: "var(--color-violet)", background: "rgba(129,140,248,0.1)", border: "1px solid rgba(129,140,248,0.2)" }
+                        ? { color: "var(--color-violet)", background: "rgba(249,115,22,0.1)", border: "1px solid rgba(249,115,22,0.2)" }
                         : { color: "var(--color-ink-3)", background: "rgba(255,255,255,0.04)", border: "1px solid var(--color-line)" };
                   return (
                     <div
@@ -90,7 +90,7 @@ export default function OperationsFinancePage() {
                       className="mkp-row flex items-center justify-between gap-2.5 px-2.5 py-2 rounded-[6px] text-[10.5px]"
                       style={{
                         border: row.hi ? "1px solid var(--color-line-t)" : "1px solid var(--color-line)",
-                        background: row.hi ? "rgba(45,212,191,0.04)" : "rgba(0,0,0,0.18)",
+                        background: row.hi ? "rgba(167,139,250,0.04)" : "rgba(0,0,0,0.18)",
                       }}
                     >
                       <span className="flex items-center gap-1.5" style={{ color: "var(--color-ink-2)" }}>
@@ -149,14 +149,14 @@ export default function OperationsFinancePage() {
 
       <section className="relative z-[1] text-center" id="cta" style={{ padding: "88px clamp(20px,4vw,48px)" }}>
         <Reveal className="max-w-[680px] mx-auto rounded-[14px] p-[56px_40px] relative overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.12)", background: "var(--color-bg-2)" }}>
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(129,140,248,0.08), transparent 60%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 500px 260px at 50% 0%, rgba(249,115,22,0.08), transparent 60%)" }} />
           <h2 className="relative font-semibold tracking-[-0.02em] mb-3.5" style={{ fontSize: "clamp(28px,3.5vw,42px)" }}>
             Let&apos;s cut your close <em className="not-italic" style={{ color: "var(--color-violet)" }}>in half</em>.
           </h2>
           <p className="relative text-[15px] max-w-[420px] mx-auto mb-6.5 leading-[1.65]" style={{ color: "var(--color-ink-2)" }}>
             Two-week diagnostic. One clear plan. We show you what to automate first.
           </p>
-          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-teal)", color: "#0b0c0f" }}>
+          <Link href="/contact" className="relative inline-flex items-center gap-2 px-5 py-[11px] rounded-lg text-[14px] font-medium no-underline transition-all duration-[180ms] hover:-translate-y-px" style={{ background: "var(--color-cta)", color: "#ffffff" }}>
             Start Your Journey →
           </Link>
         </Reveal>
