@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Hamaara Technologies">
+  <!-- Top row -->
+  <rect x="1"  y="1"  width="6" height="6" rx="1.5" fill="#E9222D"/>
+  <rect x="9"  y="1"  width="6" height="6" rx="1.5" fill="#F08230"/>
+  <rect x="17" y="1"  width="6" height="6" rx="1.5" fill="#F9B223"/>
+  <rect x="25" y="1"  width="6" height="6" rx="1.5" fill="#E9222D"/>
+  <!-- Middle row -->
+  <rect x="1"  y="9"  width="6" height="6" rx="1.5" fill="#F9B223"/>
+  <rect x="9"  y="9"  width="6" height="6" rx="1.5" fill="#F08230"/>
+  <rect x="17" y="9"  width="6" height="6" rx="1.5" fill="#E9222D"/>
+  <rect x="25" y="9"  width="6" height="6" rx="1.5" fill="#F9B223"/>
+  <!-- Bottom row -->
+  <rect x="1"  y="17" width="6" height="6" rx="1.5" fill="#E9222D"/>
+  <rect x="9"  y="17" width="6" height="6" rx="1.5" fill="#F9B223"/>
+  <rect x="17" y="17" width="6" height="6" rx="1.5" fill="#F08230"/>
+  <rect x="25" y="17" width="6" height="6" rx="1.5" fill="#E9222D"/>
+</svg>
