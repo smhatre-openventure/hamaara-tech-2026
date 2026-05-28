@@ -130,7 +130,7 @@ export function Nav() {
         {/* Brand */}
         <Link href="/" className="flex items-center no-underline">
           <Image
-            src="/assets/logo-white.svg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/logo-white.svg`}
             alt="Hamaara Technologies"
             width={120}
             height={28}
