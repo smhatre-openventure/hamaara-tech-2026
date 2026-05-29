@@ -21,7 +21,7 @@ export function Footer() {
         <div>
           <Link href="/" className="flex items-center no-underline">
             <Image
-              src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/logo-white.svg`}
+              src="/assets/logo-white.svg"
               alt="Hamaara Technologies"
               width={120}
               height={28}

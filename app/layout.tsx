@@ -10,7 +10,7 @@ const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 export const metadata: Metadata = {
   title: "Hamaara Technologies — AI-Powered Enterprise Solutions",
   description: "AI, automation, and enterprise systems that accelerate growth.",
-  icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/favicon.svg` },
+  icons: { icon: "/assets/favicon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
